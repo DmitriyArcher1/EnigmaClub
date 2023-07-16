@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+		<title>2rism</title>
+        
+        <!-- <link rel="stylesheet" href="./libs/easepick/easpick.min.css"> -->
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./css/media.css" />
+
+        <link rel="stylesheet" href="./libs/autoComplete/css/autoComplete.01.css">
+        <link rel="stylesheet" href="./libs/custom-select/custom-select.css">
+
+        <!-- Иконка -->
+        <link rel="icon" href="./icon/send-plane-fill.png">
+        
+
+    </head>
+	<body>
+		<header class="header">
+			<div class="container container--header">
+
+				<nav class="nav">
+					<a href="#!" class="logo">
+						<img src="./svg/logo.svg" alt="2Rism" />
+					</a>
+
+					<ul class="nav-list">
+						<li class="nav-list__item">
+							<a href="#" class="nav-list__link nav-list__link--active">
+                                <i class="fa-solid fa-house"></i>
+                                Главная
+                            </a>
+							
+						</li>
+						<li class="nav-list__item">
+							<a href="#Hotels" class="nav-list__link">
+                                <i class="fa-solid fa-hotel"></i>
+                                Отели
+                            </a>
+						</li>
+						<li class="nav-list__item">
+							<a href="#Hotels" class="nav-list__link">
+                                <i class="fa-solid fa-utensils"></i>
+                                Рестораны
+                            </a>
+						</li>
+						<li class="nav-list__item">
+							<a href="#Dest" class="nav-list__link">
+                                <i class="fa-solid fa-plane"></i>
+                                Туры
+                            </a>
+						</li>
+						<li class="nav-list__item">
+							<a href="#Dest" class="nav-list__link">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Направления
+                            </a>
+						</li>
+						<li class="nav-list__item">
+							<a href="#Activity" class="nav-list__link">
+                                <i class="fa-solid fa-person-running"></i>
+                                Акивность
+                            </a>
+						</li>
+						<li class="nav-list__item">
+							<a href="#Contact" class="nav-list__link">
+                                <i class="fa-solid fa-address-card"></i>
+                                Контакты
+                            </a>
+						</li>
+					</ul>
+
+                    <div class="nav__user">
+                        <div class="user">
+                            <div class="user__content">
+                                <span class="user__greeting">Привет,</span>
+                                <span class="user__name">Алекс Браун</span>
+                            </div>
+                            <div class="user__avatar">
+                                <img class="user__img" src="./img/user.jpg" alt="Avatar">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="mobile-nav-btn">
+                        <div class="nav-icon"></div>
+                    </button>
+				</nav>
+
+                <div class="header__content">
+                    <h1 class="header__title element-animation">
+                        Откройте для себя самые привлекательные места
+                    </h1>
+                    
+                    <a href="earth.html">
+
+                        <button  class="button button--huge element-animation">
+                            <img src="./svg/icon-global.svg" alt="">
+                            Откройте для себя мир в 3d-формате
+                        </button>
+                        
+                    </a>
+                    
+                    
+                </div>
+
+                <form action="" class="form element-animation">
+
+                    <div class="form__input-wrapper form__input--location">
+                        <label for="location" class="form__label">Места</label>
+                        <input autocomplete="off" type="text" class="form__input" id="location" placeholder="Исследуйте близлежащие места назначения">
+                    </div>
+
+                    <div class="form__input-wrapper form__input--activity">
+                        <label for="activity" class="form__label">Активность</label>
+                        <select name="activity" id="activity" class="form__select">
+                            <option value="all">Вся активность</option>
+                            <option value="Culture">Культура</option>
+                            <option value="Sport">Спорт</option>
+                            <option value="Extreme">Экстрим</option>
+                        </select>
+                    </div>
+
+                    <div class="form__input-wrapper form__input--date">
+                        <label for="date" class="form__label">Когда</label>
+                        <input type="text" class="form__input" id="date" placeholder="Выберите дату...">
+                    </div>
+
+                    <div class="form__input-wrapper form__input--guests">
+                        <label for="location" class="form__label">Гости</label>
+                        <select name="" id="" class="form__select">
+                            <option value="">1 гость</option>
+                            <option value="">2 гостя</option>
+                            <option value="">3 гостя</option>
+                            <option value="">4 гостя или больше</option>
+                        </select>
+                    </div>
+
+                    <button class="button button--search">
+                        <img src="./svg/search-line.svg" alt="Search">
+                    </button>
+                </form>
+
+			</div> <!-- /.container--header -->
+		</header>
+
+
+        <!-- Мобильное меню -->
+        <div class="mobile-nav-fade"></div>
+        <div class="mobile-nav">
+            <ul class="mobile-nav__list">
+                <li>
+                    <a href="#" class="active">
+                        <i class="fa-solid fa-house"></i>
+                        Главная
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#Hotels" >
+                        <i class="fa-solid fa-hotel"></i>
+                        Отели
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#Hotels" >
+                        <i class="fa-solid fa-utensils"></i>
+                        Рестораны
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#Dest" >
+                        <i class="fa-solid fa-plane"></i>
+                        Туры
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#Dest" >
+                        <i class="fa-solid fa-location-dot"></i>
+                        Направления
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#Activity" >
+                        <i class="fa-solid fa-person-running"></i>
+                        Акивность
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#Contact" >
+                        <i class="fa-solid fa-address-card"></i>
+                        Контакты
+                    </a>
+
+                </li>
+
+                <a href="#" class="mobile__nav-logo">
+                    <img src="svg/logo.svg" alt="">
+                </a>
+
+            </ul>
+        </div>
+
+        <!-- Главная часть сайта -->
+        <main class="main">
+
+            <!-- Популярные направления -->
+            <section class="section" id="Dest">
+                <div class="container">
+
+                    <div class="section__header">
+                        <h2 class="title-1 element-animation">Популярные направления</h2>
+                    </div>
+
+                    <div class="section__cards section__cards--6-in-row">
+
+                        <article class="card element-animation">
+                            <a href="#!" class="card__link"></a>
+                            <img class="card__img" src="./img/card-1.png" alt="Img">
+                            <h3 class="card__title">Большой сур</h3>
+                            <a href="#california" class="card__location">Калифорния, США</a>
+                        </article>
+
+                        <article class="card element-animation">
+                            <a href="#!" class="card__link"></a>
+                            <img class="card__img" src="./img/card-2.png" alt="Img">
+                            <h3 class="card__title">Пресскот</h3>
+                            <a href="#california" class="card__location">Аризона, США</a>
+                        </article>
+
+                        <article class="card element-animation">
+                            <a href="#!" class="card__link"></a>
+                            <img class="card__img" src="./img/card-3.png" alt="Img">
+                            <h3 class="card__title">Форт-Майерс</h3>
+                            <a href="#california" class="card__location">Флорида, США</a>
+                        </article>
+
+                        <article class="card element-animation">
+                            <a href="#!" class="card__link"></a>
+                            <img class="card__img" src="./img/card-4.png" alt="Img">
+                            <h3 class="card__title">Тускан</h3>
+                            <a href="#california" class="card__location">Аризона, США</a>
+                        </article>
+
+                        <article class="card element-animation">
+                            <a href="#!" class="card__link"></a>
+                            <img class="card__img" src="./img/card-5.png" alt="Img">
+                            <h3 class="card__title">Ст. Джозеф</h3>
+                            <a href="#california" class="card__location">Мичиган, США</a>
+                        </article>
+
+                        <article class="card element-animation">
+                            <a href="#!" class="card__link"></a>
+                            <img class="card__img" src="./img/card-6.png" alt="Img">
+                            <h3 class="card__title">Мадрид</h3>
+                            <a href="#california" class="card__location">Испания</a>
+                        </article>
+
+                    </div> <!-- /.section__cards--6-in-row -->
+
+                </div> <!-- /.container -->
+
+            </section>
+
+            <!-- Отели -->
+            <section class="section" id="Hotels">
+                <div class="container">
+
+                    <div class="section__header">
+                        <h2 class="title-1 element-animation">Отели и рестораны</h2>
+                        <a href="#!" class="button-more element-animation">
+                            Показать все
+                            <img src="./svg/arrow-right-more.svg" alt="Arrow">
+                        </a>
+                    </div>
+
+                    <div class="section__cards section__cards--4-in-row">
+                        <article class="card element-animation">
+                            <a href="#!" class="card__link"></a>
+                            <img class="card__img card__img--hotel" src="./img/hotel-1.png" alt="Img">
+                            <h3 class="card__title card__title--hotel">Спа-отель "Монастеро"</h3>
+
+                            <footer class="card__footer">
+                                <a href="#Salerno" class="card__location card__location--icon">Салерно, Италия</a>
+                                <div class="card__rating">
+                                    <img src="./svg/star-fill.svg" alt="">
+                                    <img src="./svg/star-fill.svg" alt="">
+                                    <img src="./svg/star-fill.svg" alt="">
+                                    <img src="./svg/star-fill.svg" alt="">
+                                    <img src="./svg/star-fill.svg" alt="">
+                                </div>
+                            </footer>
+                        </article>
+
+                        <article class="card element-animation">
+                            <a href="#!" class="card__link"></a>
+                            <img class="card__img card__img--hotel" src="./img/hotel-2.png" alt="Img">
+                            <h3 class="card__title card__title--hotel">Гранд-отель Тремеццо</h3>
+
+                            <footer class="card__footer">
+                                <a href="#Salerno" class="card__location card__location--icon">Озеро Комо, Италия</a>
+                                <div class="card__rating">
+                                    <img src="./svg/star-fill.svg" alt="">
+                                    <img src="./svg/star-fill.svg" alt="">
+                                    <img src="./svg/star-fill.svg" alt="">
+                                    <img src="./svg/star-line.svg" alt="">
+                                    <img src="./svg/star-line.svg" alt="">
+                                </div>
+                            </footer>
+                        </article>
+
+                        <article class="card element-animation">
+                            <a href="#!" class="card__link"></a>
+                            <img class="card__img card__img--hotel" src="./img/hotel-3.png" alt="Img">
+                            <h3 class="card__title card__title--hotel">Оберой Удайвилас, Удайпур</h3>
+
+                            <footer class="card__footer">
+                                <a href="#Salerno" class="card__location card__location--icon">Удайпур, Индия</a>
+                                <div class="card__rating">
+                                    <img src="./svg/star-fill.svg" alt="">
+                                    <img src="./svg/star-fill.svg" alt="">
+                                    <img src="./svg/star-fill.svg" alt="">
+                                    <img src="./svg/star-fill.svg" alt="">
+                                    <img src="./svg/star-line.svg" alt="">
+                                </div>
+                            </footer>
+                        </article>
+
+                        <article class="card element-animation">
+                            <a href="#!" class="card__link"></a>
+                            <img class="card__img card__img--hotel" src="./img/hotel-4.png" alt="Img">
+                            <h3 class="card__title card__title--hotel">Беверли-Хиллз</h3>
+
+                            <footer class="card__footer">
+                                <a href="#Salerno" class="card__location card__location--icon">Лос-Анджелес, США</a>
+                                <div class="card__rating">
+                                    <img src="./svg/star-fill.svg" alt="">
+                                    <img src="./svg/star-fill.svg" alt="">
+                                    <img src="./svg/star-fill.svg" alt="">
+                                    <img src="./svg/star-line.svg" alt="">
+                                    <img src="./svg/star-line.svg" alt="">
+                                </div>
+                            </footer>
+                        </article>
+
+                    </div> <!-- /.section__cards--4-in-row -->
+
+                </div> <!-- /.container -->
+
+            </section>
+
+            <!-- Советы по путешествиям -->
+            <section class="section" id="Tips">
+                <div class="container">
+
+                    <header class="section__header">
+                        <h2 class="title-1 element-animation">Советы по путешествиям и рекомендации</h2>
+                        <a href="#!" class="button-more element-animation">
+                            Показать все
+                            <img src="./svg/arrow-right-more.svg" alt="Arrow">
+                        </a>
+                    </header>
+
+                    <div class="section__cards section__cards--2-in-row">
+
+                        <article class="card card--wide element-animation">
+                            <a href="#!" class="card__link"></a>
+                            <img class="card__img card__img--tips card__img--no-margin card__img--h100 element-animation" src="./img/tips-1.png" alt="Img">
+
+                            <div class="card__desc card__desc--tips element-animation">
+                                <h3 class="card__title card__title--big">Ползание по льдам</h3>
+                                <p class="card__text">Во время этого тура протяженностью 1,5 мили и 1,5 часа мы остановимся в пяти различных магазинах мороженого мирового класса. 
+                                    В каждом магазине мороженого мы познакомимся с историей бизнеса и посмотрим, 
+                                    что делает мороженое уникальным, когда вы будете пробовать каждое из них…
+                                </p>
+
+                                <footer class="card__footer card__footer--wide">
+                                    <a href="#date" class="card__footer-link card__footer-link--date">Сегодня</a>
+                                    <a href="#author" class="card__footer-link card__footer-link--author">Мария Иванова</a>
+                                    <a href="#comments" class="card__footer-link card__footer-link--comments">345</a>
+                                </footer>
+                            </div>
+
+                        </article>
+
+                        <article class="card card--wide element-animation">
+                            <a href="#!" class="card__link"></a>
+                            <img class="card__img card__img--no-margin card__img--h100" src="./img/tips-2.png" alt="Img">
+
+                            <div class="card__desc">
+                                <h3 class="card__title card__title--big">Кинематографическая фотопрогулка по Бруклинскому мосту</h3>
+                                <p class="card__text">Этот опыт проходит в парке Бруклин Бридж и на Бруклинском мосту, но я всегда 
+                                    готов принять клиентов в разных местах по запросу и за дополнительную плату.
+                                </p>
+
+                                <footer class="card__footer card__footer--wide">
+                                    <a href="#date" class="card__footer-link card__footer-link--date">Сегодня</a>
+                                    <a href="#author" class="card__footer-link card__footer-link--author">Дмитрий Селин</a>
+                                    <a href="#comments" class="card__footer-link card__footer-link--comments">1327</a>
+                                </footer>
+                            </div>
+
+                        </article>
+
+
+                    </div> <!-- /.section__cards--2-in-row -->
+
+                </div> <!-- /.container -->
+            </section>
+
+            <!-- Деятельность -->
+            <section class="section" id="Activity">
+                <div class="container">
+
+                    <header class="section__header">
+                        <h2 class="title-1 element-animation">Активность</h2>
+                        <a href="#!" class="button-more element-animation">
+                            Показать все
+                            <img src="./svg/arrow-right-more.svg" alt="Arrow">
+                        </a>
+                    </header>
+
+                    <div class="section__cards section__cards--4-in-row">
+
+                        <article class="card element-animation">
+                            <a href="#!" class="card__link"></a>
+                            <img class="card__img card__img--activities" src="./img/act-1.png" alt="Img">
+                            <h3 class="card__title">Парусный спорт</h3>
+                        </article>
+
+                        <article class="card element-animation">
+                            <a href="#!" class="card__link"></a>
+                            <img class="card__img card__img--activities" src="./img/act-2.png" alt="Img">
+                            <h3 class="card__title">Скалолазание</h3>
+                        </article>
+
+                        <article class="card element-animation">
+                            <a href="#!" class="card__link"></a>
+                            <img class="card__img card__img--activities" src="./img/act-3.png" alt="Img">
+                            <h3 class="card__title">Катание на лыжах</h3>
+                        </article>
+
+                        <article class="card element-animation">
+                            <a href="#!" class="card__link"></a>
+                            <img class="card__img card__img--activities" src="./img/act-4.png" alt="Img">
+                            <h3 class="card__title">Пеший туризм</h3>
+                        </article>
+
+
+                    </div>
+
+                </div> <!-- /.container -->
+            </section>
+
+            <!-- О нас -->
+            <section class="section" id="About">
+                <div class="container">
+                    <div class="about-us">
+                        <div class="about-us__desc">
+                            <h3 class="about-us__title element-animation">О нас</h3>
+                            <p class="about-us__text element-animation">Мы частная компания 2rism. Наша деятельность заключается в том, чтобы помогать людям наболее удобно выбирать места для отдыха. 
+                                Мы предлагаем множества вариантов курортов по всему миру. 
+                                Цены могут вас порадовать, ибо они могут достигать уровня, ниже рыночного. Мы свегда будем вам рады! Наслаждайтесь вашим отдыхом!
+                            </p>
+                            <div class="about-us__btn">
+                                <a href="#" class="button-more element-animation">Подробнее <img src="./svg/arrow-right-more.svg" alt="Arrow"></a>
+                            </div>
+                        </div>
+                        <img src="./img/about.png" alt="" class="about-us__img element-animation">
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer" id="Contact">
+            <div class="container">
+                <div class="footer__row">
+
+                    <div class="footer__copyright">
+                        <img src="./svg/logo-black.svg" alt="Logo" class="footer__logo">
+                        <p class="footer__text">Мы всегда радуем наших клиентов, предоставляя как можно больше вариантов</p>
+                        <ul class="footer__socials">
+                            <li class="footer__socials-item">
+                                <a href="#!" class="footer__socials-link" target="_blank">
+                                    <img src="./svg/facebook.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer__socials-item">
+                                <a href="#!" class="footer__socials-link" target="_blank">
+                                    <img src="./svg/twitter.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer__socials-item">
+                                <a href="#!" class="footer__socials-link" target="_blank">
+                                    <img src="./svg/instagram.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__nav-wrapper">
+
+                        <div class="footer__nav">
+                            <h3 class="footer__nav-title">О нас</h3>
+
+                            <ul class="footer__nav-list">
+                                <li class="footer__nav-item">
+                                    <a href="#!" class="footer__nav-link">О нас</a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#!" class="footer__nav-link">Особенности</a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#!" class="footer__nav-link">Новости</a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#!" class="footer__nav-link">Меню</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__nav">
+                            <h3 class="footer__nav-title">Компания</h3>
+
+                            <ul class="footer__nav-list">
+                                <li class="footer__nav-item">
+                                    <a href="#!" class="footer__nav-link">Почему 2rism</a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#!" class="footer__nav-link">Партнёры</a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#!" class="footer__nav-link">Частые вопросы</a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#!" class="footer__nav-link">Блог</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="footer__nav">
+                            <h3 class="footer__nav-title">Поддержка</h3>
+
+                            <ul class="footer__nav-list">
+                                <li class="footer__nav-item">
+                                    <a href="#!" class="footer__nav-link">Аккаунт</a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#!" class="footer__nav-link">Центр тех.поддержки</a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#!" class="footer__nav-link">Отзывы</a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#!" class="footer__nav-link">Связаться с нами</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div> <!-- /.footer__nav-wrapper -->
+
+                    <div class="footer__subscribe">
+                        <div class="footer__subscribe-title">Подпишитесь на нашу рассылку обзоров мест назначения</div>
+
+                        <form action="" class="subscribe">
+
+                            <div class="subscribe__input-wrapper">
+                                <input type="email" class="subscribe__input" required>
+                                <label for="" class="subscribe__label">Ваш e-mail...</label>
+                            </div>
+
+                            <div class="subscribe__btn-wrapper">
+                                <button class="button button--subscribe">
+                                    <img src="./svg/arrow-right-fill.svg" alt="">
+                                </button>
+                            </div>
+                        </form>
+
+                    </div> <!-- /.footer__subscribe -->
+
+
+                </div> <!-- /.footer__row -->
+
+            </div> <!-- /.container -->
+
+            <div id="cookie_notification">
+                <p>Для улучшения работы сайта и его взаимодействия с пользователями мы используем файлы cookie. Продолжая работу с сайтом, Вы разрешаете использование cookie-файлов. Вы всегда можете отключить файлы cookie в настройках Вашего браузера.</p>
+                <button class="button cookie_accept">Принять</button>
+            </div>
+
+        </footer>
+
+        <div class="footer__developer">
+            <i class="fa-solid fa-copyright"></i>
+            <span class="footer__developer__cp">2rism <br></span>Все права защищены <br> 
+            Разработчик сайта: <a href="https://vk.com/archerquo" target="_blank">Селин Дмитрий</a>
+        </div>
+
+
+        <script src="./libs/autoComplete/autoComplete.min.js"></script>
+        <script src="./libs/custom-select/custom-select.min.js"></script>
+        <script src="./libs/easepick/easepick.min.js"></script>
+        <script src="https://kit.fontawesome.com/c6ba37b0b2.js" crossorigin="anonymous"></script>
+
+        <script src="./js/animation.js"></script>
+        <script src="./js/input-dest.js"></script>
+        <script src="./js/mobile-nav.js"></script>
+        <script src="./js/main.js"></script>
+
+    </body>
+</html>
