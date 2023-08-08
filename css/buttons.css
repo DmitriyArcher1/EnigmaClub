@@ -45,7 +45,7 @@
 .button--subscribe {
     width: 72px;
     height: 72px;
-    padding: 28px;
+    padding: 26px;
 }
 
 
@@ -95,8 +95,21 @@
 }
 
 
-.button-more.element-animation.element-show{
+.button-more.element-animation.element-show {
     opacity: 1;
     transition: all 1s;
     transform: translateY(30%);
+}
+
+
+.button__sign__up {
+    background-color: #6344ff;
+    padding: 10px 10px;
+    border-radius: 20px;
+
+    transition: all 0.3s linear;
+}
+
+.button__sign__up:hover {
+    background-color: #690ac2;
 }
