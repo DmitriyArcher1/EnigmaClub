@@ -25,6 +25,11 @@
 	.autoComplete_wrapper > input {
 		width: auto !important;
 	}
+
+	.button__sign__up{
+		padding: 1px 13px;
+	}
+	
 }
 
 @media (max-width: 1139px) {
@@ -52,6 +57,10 @@
 
 	.mobile-nav-btn {
 		display: block;
+	}
+
+	.button__sign__up{
+		display: none;
 	}
 
 	.main {
