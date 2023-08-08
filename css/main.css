@@ -39,7 +39,6 @@ body {
 	color: #fff;
 	background-color: black;
 	background-image: url(./../img/header-bg.jpg);
-    background-attachment: fixed;
 	background-size: cover;
 	background-position: center center;
 
