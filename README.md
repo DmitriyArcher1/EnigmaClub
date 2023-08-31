@@ -1,10 +1,10 @@
-# 2rism Frontend Web-Site
+# EnigmaClub Frontend Web-Site
 ___________________________________________________________________________
-[ENG] - The site of the travel company 2rism with basic information, a 3d model of the planet Earth, 
+[ENG] - The site of the travel company EnigmaClub with basic information, a 3d model of the planet Earth (temporarily removed), 
 a choice of parameters for the resort, as well as a search for countries of the world. 
 Additions are expected in the near future.
 
-[RUS] - Сайт туристической компании 2rism с основной информацией, 3d модель планеты Земли, 
+[RUS] - Сайт туристической компании EnigmaClub с основной информацией, 3d модель планеты Земли (временно убрана), 
 выбор параметров для курорта, а также поиск по странам мира. 
 Ожидаются дополнения в ближайшем будущем.
 
