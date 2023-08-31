@@ -539,6 +539,8 @@ body {
 
 .footer__logo{
     filter: drop-shadow(3px 3px 7px #6d50ff);
+	width: 200px;
+    height: 47px;
 }
 
 .footer__copyright {
