@@ -26,6 +26,12 @@ body {
     filter: drop-shadow(4px 5px 5px #6d50ff);
 }
 
+.logo__enigma{
+    width: 195px;
+    height: 48px;
+}
+
+
 
 /* Sign up */
 .sign__up__form {
