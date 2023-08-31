@@ -116,6 +116,11 @@ body {
     filter: drop-shadow(3px 3px 7px #6d50ff);
 }
 
+.logo__enigma{
+    width: 180px;
+    height: 45px;
+}
+
 
 /* User */
 .user {
