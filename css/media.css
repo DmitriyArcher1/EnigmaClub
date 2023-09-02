@@ -119,6 +119,17 @@
     .subscribe__input {
         width: 100%;
     }
+	.stat {
+		justify-content: center;
+	}
+
+	.stat__item {
+		border-left: 0;
+    }
+
+	.stat__item:last-child {
+        border-right: 0;
+    }
 }
 
 @media (max-width: 1040px) {
@@ -182,6 +193,11 @@
 	.section__cards--6-in-row {
 		grid-template-columns: repeat(1, 1fr);
 	}
+}
 
-
+@media (max-width: 410px) {
+	.stat__item {
+		width: 100%;
+		border-bottom: 1px solid #4603ff28;	
+	}
 }
