@@ -283,6 +283,20 @@ body {
 	grid-template-columns: repeat(2, 1fr);
 }
 
+.section--hotels{
+    background-color: #7256ff2a;
+    border-radius: 50px;
+
+    padding: 40px 20px;
+}
+
+.section--activity{
+    background-color: #7256ff2a;
+    border-radius: 50px;
+
+    padding: 40px 20px;
+}
+
 
 /* Card */
 .card {
