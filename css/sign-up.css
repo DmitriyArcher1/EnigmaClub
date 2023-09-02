@@ -216,4 +216,8 @@ body {
     .main__page__website--btn{
         font-size: 18px;
     }
+
+	.label {
+        font-size: 14px;
+    }
 }
