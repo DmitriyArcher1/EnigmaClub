@@ -55,6 +55,9 @@ body {
     font-size: 18px;
 }
 
+.sign-in__title {
+    font-size: 20px;
+}
 
 /* Form */
 .form {
